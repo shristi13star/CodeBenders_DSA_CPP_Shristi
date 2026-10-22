@@ -87,7 +87,7 @@
 ---
 ## 🛠️ Languages and Tools
 
-- **Languages:** C++ / Java
+- **Languages:** C++
 - **Concepts:** Data Structures, Algorithms, Recursion, Problem Solving
 - **Tools:** VS Code, Git and GitHub
 
