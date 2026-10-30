@@ -1,17 +1,34 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-    int arr[5]={1,2,3,4,5};
-    char arr1[5]={'a','b','c','d','e'};
-    vector<int> v={1,2,3,4,5};
-    v.push_back(6);
-    //v.pop_back();
-    cout<<v.size()<<endl;
-    cout<<v[5]<<endl;
-    cout<<arr[0]<<endl;
-    for(int i=0;i<v.size();i++){
-        cout<<v[i]<<" ";
+int main()
+{
+    int arr[5] = {1, 2, 3, 4, 5}; // {-1,-2,-3,-4,-5}
+    int sum = 0;
+    int mx = INT_MIN;
+    for (int i = 0; i < 5; i++) //  {1, 2, 3, 4, 5}
+    {
+        sum += arr[i]; // sum=sum+arr[i] sum=1+2=3
+        mx = max(mx, arr[i]); // mx=max(1,2)=2
     }
+    cout << "Sum of array elements: " << sum << endl;
+    cout << "Maximum element in the array: " << mx << endl;
+    // Merge two sorted arrays
+    // int a[] = {1, 4, 7}, b[] = {2, 3, 9, 10};
+    // int n = 3, m = 4, c[7];
+    // int i = 0, j = 0, k = 0;
+    // while (i < n && j < m)
+    // {
+    //     if (a[i] < b[j])
+    //         c[k++] = a[i++];
+    //     else
+    //         c[k++] = b[j++];
+    // }
+    // while (i < n)
+    //     c[k++] = a[i++];
+    // while (j < m)
+    //     c[k++] = b[j++];
+    // for (int x : c)
+    //     cout << x << " ";
     return 0;
 }
